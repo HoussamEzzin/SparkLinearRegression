@@ -6,7 +6,7 @@ from pyspark.ml.regression import LinearRegression
 spark = SparkSession.builder.appName("LinearRegression").getOrCreate()
 
 
-data = spark.read.csv('Student_Grades_Data.csv', header=True,inferSchema=True)
+data = spark.read.csv('data/Student_Grades_Data.csv', header=True,inferSchema=True)
 
 
 data.printSchema()
